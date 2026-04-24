@@ -44,21 +44,25 @@ Run Docker Container
 docker run -p 8080:8080 aarya/k8sapp
 
 Access:
-
 http://localhost:8080
+
 Start Kubernetes Cluster
 minikube start
 Load Docker Image into Minikube
 minikube image load aarya/k8sapp:latest
+
 Deploy Application
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
+
 Verify Resources
 kubectl get pods
 kubectl get deployments
 kubectl get svc
+
 Access Application
 minikube service k8sapp-service
+
 Features
 Containerized Spring Boot Application
 Kubernetes Deployment with Replicas
@@ -69,13 +73,11 @@ Sample Output
 2 Pods Running
 Service Created
 Application Accessible in Browser
-Author
 
-Aarya
 
+Author:Aarya
 
 ---
-
 # Small Tip
 
 Before upload remove `target/` folder from GitHub using `.gitignore`
